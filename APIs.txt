@@ -1,0 +1,104 @@
+Beacon Service
+PUT		/api/checkin/:id
+	input:
+	{
+		id: string
+		present: boolean
+	}
+
+Member Profile
+// Get the list of all members
+GET		/api/members
+	output:
+	{
+		members: []
+	}
+
+
+// Get a specific member
+GET		/api/member/:id
+	output:
+	{
+		member: {}
+	}
+
+// Get all member care team members
+GET		/api/member_care
+	output:
+	[
+		{
+			member: {}
+			members: [
+				{},
+				{},
+				...
+			]
+		}
+	]
+
+// Get a member care person's associated members
+GET		/api/member_care/:id
+	output:
+	{
+		member: {}
+		members: [
+			{},
+			{},
+			...
+		]
+	}
+
+// Create a member
+POST	/api/member
+	{
+		...
+	}
+
+	output:
+	{
+		id
+		...
+	}
+
+// Update a member
+PUT		/api/member/:id
+	input:
+	{
+		...
+	}
+
+	output:
+	{
+		...
+	}
+
+// Delete a specific member
+DELETE	/api/member/:id
+	output:
+	{
+		error: {}
+	}
+
+
+
+Analytics
+// Get statistics of a specific member
+GET		/api/analytics/:memberid
+	output:
+	{
+		member: {}
+		attendence: []
+		stats: []
+	}
+
+// Get relevant statistics (unfinished)
+GET		/api/analytics/summary
+	input:
+	{
+
+	}
+
+	output: 
+	{
+
+	}
