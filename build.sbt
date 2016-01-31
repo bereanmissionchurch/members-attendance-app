@@ -10,7 +10,10 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  specs2 % Test
+  specs2 % Test,
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
+  "org.webjars" % "angularjs" % "1.4.9",
+  "org.webjars" % "requirejs" % "2.1.11-1"
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
