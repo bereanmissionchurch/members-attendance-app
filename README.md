@@ -30,5 +30,8 @@ Check to see that Activator has been installed:
 
 5) On a webpage, go to ```http://localhost:9000```
 
+Enjoy,
+Jsub
+
 
  
