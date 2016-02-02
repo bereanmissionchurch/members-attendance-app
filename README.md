@@ -18,17 +18,15 @@ Check to see that Activator has been installed:
 
     $ git clone https://github.com/bereanmissionchurch/members-attendance-app.git
     
-*Note that if you are making changes to the project, it is recommended to fork the repo before cloning to your local environment. Changes can be merged with pull requests.
-
 3) Go into the project folder:
 
     $ cd members-attendance-app
 
 4) Run activator:
 
-    $ activator
+    $ activator run
 
-5) On a webpage, go to ```http://localhost:9000```
+5) Once you see "Server started, use Ctrl+D ...", go to ```http://localhost:9000``` on a webpage
 
 Enjoy,
 Jsub
