@@ -1,5 +1,6 @@
 // The Play plugin
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.4.6")
+// Play 2.3 allows Java 7; Play 2.4 forces Java 8  
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.6")
 
 // web plugins
 
