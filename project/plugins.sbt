@@ -15,3 +15,7 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-rjs" % "1.0.7")
 addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.1.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.0")
+
+resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
+
+resolvers += "Typesafe repository mwn" at "http://repo.typesafe.com/typesafe/maven-releases/"
