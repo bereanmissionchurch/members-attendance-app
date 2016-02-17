@@ -1,4 +1,4 @@
-name := """members-attendence-app"""
+name := """members-attendance-app"""
 
 version := "1.0-SNAPSHOT"
 
