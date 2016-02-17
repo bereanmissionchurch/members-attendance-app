@@ -2,7 +2,7 @@ Member Attendance Application
 ================================
 
 ## Introduction
-This project keeps a roster of group members and tracks their attendance. Using the data, dashboards with statistics will indicate possible actions to take. [Demo] (https://fast-wildwood-94757.herokuapp.com/)
+This project keeps a roster of group members and tracks their attendance. Using the data, dashboards with statistics will indicate possible actions to take.
 
 
 ## Install
