@@ -1,0 +1,35 @@
+{
+  "name": "berean-memberapp",
+  "version": "1.0.0",
+  "description": "Member Attendance Application",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bower": "^1.7.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bereanmissionchurch/members-attendance-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bereanmissionchurch/members-attendance-app/issues"
+  },
+  "homepage": "https://github.com/bereanmissionchurch/members-attendance-app#readme"
+}

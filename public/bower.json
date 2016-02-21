@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "homepage": "https://github.com/bereanmissionchurch/members-attendance-app",
+  "authors": "",
+  "description": "na",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "backbone": "^1.2.3"
+  }
+}
