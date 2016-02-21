@@ -7,3 +7,6 @@ var gulp = require('gulp');
 gulp.task('scripts', function(){
 	console.log('it works');
 });
+
+// default task
+gulp.task('default', ['scripts']);
