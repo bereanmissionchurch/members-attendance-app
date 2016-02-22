@@ -1,13 +1,14 @@
 @import "susy";
 @import "breakpoint";
 
-/* Mixins */
+/* Mixins
 @mixin x-user-select ($value: none) {
 	-webkit-user-select: $value;
 	   -moz-user-select: $value;
 	    -ms-user-select: $value;
 	        user-select: $value;
 }
+*/
 
 /* Actual */
 
@@ -25,7 +26,8 @@ html {
 	&Listing {
 		border-bottom: 1px solid gray;
 		padding: 20px;
-		@include x-user-select;
+		user-select: none;
+		
 	}
 	&Pic {
 		width: 75px;
