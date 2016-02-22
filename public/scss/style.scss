@@ -1,11 +1,39 @@
 @import "susy";
 @import "breakpoint";
-@import "reset";
 
-@import "variables";
-@import "mixins";
+/* Mixins */
+@mixin x-user-select ($value: none) {
+	-webkit-user-select: $value;
+	   -moz-user-select: $value;
+	    -ms-user-select: $value;
+	        user-select: $value;
+}
 
-@import "base";
-@import "typography";
-@import "images";
-@import "icons";
+/* Actual */
+
+html {
+	font-size: 16px;
+	
+}
+
+.member{
+	&Info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&Listing {
+		border-bottom: 1px solid gray;
+		padding: 20px;
+		@include x-user-select;
+	}
+	&Pic {
+		width: 75px;
+	}
+	&Name {
+		flex: 1;
+		flex-direction: column;
+		font-size: 1.4em;
+		text-align: center;
+	}
+}

@@ -1,7 +1,8 @@
 // requried
 
-var gulp = require('gulp');
-	uglify = require('gulp-uglify');
+var gulp = require('gulp'),
+	uglify = require('gulp-uglify'),
+	compass = require('gulp-compass'),
 	rename = require('gulp-rename');
 
 //	scripts
@@ -13,11 +14,30 @@ var gulp = require('gulp');
 //	*.+(js|css)		# matches all files in the root directory ending in .js or .css
 	
 gulp.task('scripts', function(){
-	gulp.src(['public/javascripts/**/*.js', '!app/js/**/*/min.js'])
+	gulp.src(['public/javascripts/**/*.js', '!public/javascripts/**/*.min.js'])
 	.pipe(rename({suffix:'.min'}))
 	.pipe(uglify())
 	.pipe(gulp.dest('public/javascripts'));
 });
 
+// compass / sass
+gulp.task('compass', function(){
+	gulp.src('public/scss/style.scss')
+	.pipe(compass({
+		config_file: './config.rb',
+		css: 'public/css',	//location of css folder
+		sass: 'public/scss',	//location of our sass folder
+		require: ['susy']	// require susy
+	}))
+	.pipe(gulp.dest('public/css/'));
+});
+
+// watch tasks
+gulp.task('watch', function(){
+	gulp.watch('public/javascripts/**/*.js', ['scripts']);
+	gulp.watch('public/scss/**/*.scss', ['compass']);
+});
+
+
 // default task
-gulp.task('default', ['scripts']);
+gulp.task('default', ['scripts', 'compass', 'watch']);
