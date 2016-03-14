@@ -4,12 +4,11 @@ import models.{User, Users}
 import play.api._
 import play.api.data.Forms._
 import play.api.data._
-import play.api.mvc._
 import play.api.libs.json._
-import scala.concurrent.ExecutionContext.Implicits.global
+import play.api.mvc._
 
 
-object UsersController extends Controller {
+object MembersController extends Controller {
 	val userForm = Form(
 	    mapping(
 	        "name" -> text,
