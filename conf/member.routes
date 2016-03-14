@@ -1,0 +1,24 @@
+
+# VIEWS
+GET     /                           controllers.MembersController.index
+GET     /add                        controllers.MembersController.add
+GET    /:id/edit                    controllers.MembersController.edit(id: Int)
+
+# APIs
+GET     /all                        controllers.MembersController.all
+POST    /save                       controllers.MembersController.save
+POST    /:id/update                 controllers.MembersController.update(id: Int)
+POST    /:id/delete				    controllers.MembersController.delete(id: Int)
+
+
+#GET   /users                        controllers.UsersController.index
+#
+#GET   /users/add                    controllers.UsersController.add
+#GET   /users/:id/edit				controllers.UsersController.edit(id: Int)
+#
+#POST  /users/save                    controllers.UsersController.save
+#POST  /users/:id/update             controllers.UsersController.update(id: Int)
+#POST  /users/:id/delete				controllers.UsersController.delete(id: Int)
+#
+#GET     /users/all                  controllers.UsersController.all
+
