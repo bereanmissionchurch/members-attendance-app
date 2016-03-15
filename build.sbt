@@ -19,7 +19,8 @@ libraryDependencies ++= Seq(
 //  "org.postgresql" % "postgresql" % "9.3-1102-jdbc4"
   "com.typesafe.slick" %% "slick" % "2.1.0",
   "com.typesafe.play" %% "play-slick" % "0.8.0",
-  "org.postgresql" % "postgresql" % "9.3-1102-jdbc4"
+  "org.postgresql" % "postgresql" % "9.3-1102-jdbc4",
+  "io.spray" %%  "spray-json" % "1.2.5"
 )
 
 //javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
@@ -33,6 +34,8 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 resolvers += "Typesafe repository mwn" at "http://repo.typesafe.com/typesafe/maven-releases/"
+
+resolvers += "spray" at "http://repo.spray.io/"
 
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
