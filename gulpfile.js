@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 //	css/**/*.css 	# matches files ending in .css in the css directory and child directories
 //	!css/style.css	# excludes style.css files
 //	*.+(js|css)		# matches all files in the root directory ending in .js or .css
-	
+
 gulp.task('scripts', function(){
 	gulp.src(['public/javascripts/**/*.js', '!public/javascripts/**/*.min.js'])
 	.pipe(plumber())
@@ -36,8 +36,8 @@ gulp.task('compass', function(){
 		require: ['susy']	// require susy
 	}))
 	.pipe(autoprefixer('last 2 versions'))
-	.pipe(gulp.dest('public/css/'))
-	.pipe(reload({stream:true}));
+	.pipe(gulp.dest('public/css/'));
+	//.pipe(reload({stream:true}));
 });
 
 // html tasks
