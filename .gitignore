@@ -7,3 +7,6 @@ target
 /.settings
 /RUNNING_PID
 .history
+.sass-cache
+bower_components
+node_modules
